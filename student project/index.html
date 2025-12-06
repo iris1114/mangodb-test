@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        svg {
+            width: 100px;
+            height: 100px;
+            overflow: visible;
+        }
+
+        .sigma_progress-stroke {
+            fill: none;
+            stroke: #e1e1e1;
+            stroke-width: 10;
+            stroke-linejoin: round;
+            stroke-miterlimit: 10;
+            position: relative;
+            z-index: -1;
+            color: #e1e1e1;
+        }
+
+        .sigma_progress-round {
+            fill: none;
+            stroke: #ffaa17;
+            -webkit-transform-origin: center center;
+            -ms-transform-origin: center center;
+            transform-origin: center center;
+            stroke-dashoffset: 700;
+            stroke-dasharray: 700;
+            stroke-width: 20px;
+            stroke-linejoin: round;
+            stroke-miterlimit: 10;
+            stroke-linecap: butt;
+            -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+            transition: stroke-dashoffset 1s;
+            color: #ffaa17;
+            stroke-linecap: round;
+        }
+    </style>
+</head>
+
+<body>
+    <div className="about__text-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 197 197" enable-background="new 0 0 197 197" xml:space="preserve">
+            <circle class="sigma_progress-stroke" stroke-linecap="round" cx="98.5" cy="98.6" r="97.5">
+            </circle>
+            <circle class="sigma_progress-round" data-to="210" stroke-linecap="round" cx="98.5" cy="98.6" r="97.5"
+                style="stroke-dashoffset: 210px;">
+            </circle>
+        </svg>
+        <div className="circle-number">
+            83<span className="percent">%</span>
+        </div>
+    </div>
+</body>
+
+</html>
